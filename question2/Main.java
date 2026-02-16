@@ -11,13 +11,13 @@ public class Main {
         library.addBook(book1);
         library.addBook(book2);
 
-        System.out.println("Total Available Books: " + library.getTotalBooksCount());
+        System.out.println("Total Available Books" + library.getTotalBooksCount());
 
         try {
             library.borrowBook("ISBN123");
             System.out.println("Book ISBN123 borrowed successfully.");
         } catch (BookNotFoundException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error" + e.getMessage());
         }
 
         System.out.println("Total Available Books: " + library.getTotalBooksCount());
@@ -25,9 +25,9 @@ public class Main {
         try {
             library.borrowBook("ISBN456");
         } catch (BookNotFoundException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error " + e.getMessage());
         } catch (IllegalStateException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error " + e.getMessage());
         }
 
         System.out.println("Total Available Books: " + library.getTotalBooksCount());
@@ -35,9 +35,9 @@ public class Main {
         try {
             library.borrowBook("ISBN999");
         } catch (BookNotFoundException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error; " + e.getMessage());
         }
 
-        System.out.println("Total Available Books: " + library.getTotalBooksCount());
+        System.out.println("Total Aval Books " + library.getTotalBooksCount());
     }
 }
